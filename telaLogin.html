@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Estilos_css/estilo-conteiner-header.css">
+    <link rel="stylesheet" href="Estilos_css/estilo-conteiner-main.css">
+    <link rel="stylesheet" href="Estilos_css/estilo-conteiner-footer.css">
+    <link rel="icon" type="'image/x-icon" href="/Imagens/TechMoney-logo-favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+    <header class="header-conteiner">
+        <div id="menu" onclick="OpenMenu()">
+            <nav>
+                <ul id="menu-ul">
+                    <li class="fecha-menu"><a>FECHAR</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-ul-li">
+                        <a href="mercados.html">
+                            Mercados
+                        </a>
+                    </li>
+                    <li class="menu-ul-li">
+                        <a href="ondeInvestir.html">
+                            Onde Investir
+                        </a>
+                    </li>
+                    <li class="menu-ul-li">
+                        <a href="minhasFinancas.html">
+                            Minhas finanças
+                        </a>
+                    </li>
+                    <li class="menu-ul-li">
+                        <a href="economia.html">
+                            Economia
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <img class="menu-img" src="Imagens/menu.png">
+        </div>
+        <!--- conteiner que recebera o logo-->
+        <div class="header-conteiner-logo">
+            <a href="index.html" class="logo">TechMoney</a>
+        </div>
+
+        <!-- Conteiner que segura os menus-->
+        <div class="header-container-div1">
+            <!-- menus-->
+            <nav class="header-conteiner-div1-nav">
+                <div class="header-conteiner-div1-nav-aux">
+                    <a href="index.html" class="links">
+                        Home
+                    </a>
+                    <a href="mercados.html" class="links">
+                        Mercados
+                    </a>
+                    <a href="ondeInvestir.html" class="links">
+                        Onde investir
+                    </a>
+                    <a href="minhasFinancas.html" class="links">
+                        Minhas finanças
+                    </a>
+                    <a href="economia.html" class="links">
+                        Economia
+                    </a>
+                </div>
+            </nav>
+            <!-- Login e inscrição -->
+            <div class="header-conteiner-box">
+                <div class="header-container-menu-inscricao"><a class="a-inscricao" href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="header-conteiner-menu-login">
+                    <a
+                        href="telaLogin.html">
+                        <img src="Imagens/login.png" class="img-menu"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-conteiner">
+        <h1 class="main-conteiner-h1" style="text-align:center">Cadastro</h1>
+        <!-- Div que contem o conteudo em texto -->
+        <div class="main-conteiner-div2">
+            <div class = "conteiner-form">
+                <form onsubmit=" return Enviar()">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Ex: João almeida" required>
+                    <br><br>
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento" required>
+                    <br><br>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                    <br><br>
+                    <label for="sex">Maculino</label>
+                    <input type="radio" name="sex" id="masc" required>
+                    <label for="sex">Feminino</label>
+                    <input type="radio" name="sex" id="fem" required>
+                    <br><br>
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Aceite os termos</label>
+                    <br><br>
+                    <input type="submit" values="Enviar" >
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-conteiner">
+        <div class="footer-conteiner-div0">
+            <div class="pcopy">
+                <p>TechMoney &copy 2024</p>
+                <!--<p><a href="#">Termos de uso</a></p>-->
+                <p><a href="#">Contatos</a></p>
+                <!--<p><a href="#">Política de privacidade</a></p>
+                <p><a href="#">Aviso de cookies</a></p>-->
+            </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

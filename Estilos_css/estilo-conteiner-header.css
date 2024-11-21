@@ -1,0 +1,297 @@
+.header-conteiner{
+    width: 100vw;
+    height: 74px;
+    display:flex;
+    position:sticky;
+    top:0px;
+    z-index:999;
+    font-style:sans-serif;
+}
+h1{
+    word-wrap: break-word;
+}
+/* ------------------------------------ */
+/* Menu suspenso */
+.menu-img{
+    width:50%;
+    height:50%
+}
+
+#menu{ /* wrapper */
+    background-color:white;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 74px;
+    position:relative;
+    display:none;
+}
+#menu ul{
+    list-style:none;
+    position:absolute;
+    display:none;
+    transition:0.8s;
+    width:99vw;
+    height:300vw;
+    background:black;
+    z-index:999;
+    text-decoration:none;
+    left:0px
+}
+#menu ul li{
+    padding:10px 15px;
+    font-size:2.5rem;
+    width:90%;
+    border-top:1px solid silver;
+}
+#menu ul li a{
+    text-decoration:none
+}
+#menu ul li:hover{
+    background-color:grey;
+}
+#menu ul li:hover:first-child{
+    background-color:red
+}
+#menu-ul{
+    padding:10px 15px;
+    background:#000000;
+    left:0px;
+    top:-22%
+}
+.fecha-menu{
+    color:white;
+    border-Bottom:3px solid silver;
+
+}
+
+/*#menu:hover > .menu-ul{
+    display:block;
+}*/
+/* -----------------------*/
+
+.header-conteiner-logo{
+    background-color: white;
+    width:30%;
+    height: 50px;
+    padding: 10px;
+    font-size: 35pt;
+    text-align: center;
+    justify-content:center;
+    border:2px black solid;
+}
+.logo{
+    text-decoration: none;
+    color:black
+}
+.logo:hover{
+    color: black;
+    text-decoration: none;
+}
+.header-container-div1{
+    display:flex;
+    width: 100vw;
+    
+}
+.header-conteiner-div1-nav{
+    width: 80%;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+.header-conteiner-div1-nav-aux{
+    font-size: 15pt;
+}
+
+.header-conteiner-div1-nav-aux a{
+    text-decoration: none;
+    color:grey
+}
+.header-conteiner-div1-nav-aux a:hover{
+    text-decoration: none;
+    color:white
+}
+.header-conteiner-box{
+   width:20vw;
+   display: flex;
+   padding:10px;
+   background-color:black;
+   text-align: center;
+   align-items: center;
+}
+
+.header-container-menu-inscricao{
+    width: 40%;
+    color:black;
+    border-radius:5px;
+    padding: 5px;
+    font-size: 15pt;
+    word-wrap: break-word;
+    white-space: nowrap;
+    background-color:yellow;
+}
+.a-inscricao{
+    color:black;
+}
+.a-inscricao:hover{
+    text-decoration: none;
+    color:black;
+}
+.header-conteiner-menu-login{
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    white-space: nowrap;
+}
+.img-menu{
+    width: 42px;
+    height:42px;
+    background-color:#f2f2f2;
+    border-radius: 20px;
+}
+.links{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    text-indent: 0.5em;
+}
+
+/* ---------------------------------------------------*/
+
+/* Responsividade */
+
+@media screen and (max-width:1023px){
+    .header-conteiner{
+        width: 100vw;
+        height:125px;
+        display:flex;
+        border:1px solid black
+    }
+    #menu{
+        display:block;
+        background-color:white;
+        width:4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height: 74px;
+        word-wrap: break-word;
+    }
+    /* logo do site */
+    .header-conteiner-logo{
+        background-color:white;
+        width: 60%;
+        padding: 10px;
+        font-size: 3rem;
+        text-align: center;
+        border:2px black solid;
+        height:auto;
+    }
+
+    /* Box que contem as box dos link e login*/
+    .header-container-div1{
+        display: flex;
+        width: 40%;
+    }
+
+     /* Box dos links das páginas */
+    .header-conteiner-div1-nav{
+        width: 100vw;
+        position:absolute;
+        top:74px;
+        z-index:999px;
+        left:0px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        justify-content:start;
+        display:none
+    }
+
+    /* Login e inscrição*/
+    .header-conteiner-box{
+        width:100%;
+        padding:10px;
+        text-align: center;
+        align-items:end;
+        position:relative
+     }
+     /*Caixa de inscrição */
+     .header-container-menu-inscricao{
+        color:rgb(177, 153, 153);
+        width:60%;
+        border-radius:5px;
+        background-color:yellow;
+        padding: 5px;
+        font-size: 0.875rem;
+        word-wrap: break-word;
+        text-align:center;
+        max-height:40px;
+        margin:auto;
+        justify-content:center;
+    }
+    .header-conteiner-menu-login{
+        display:block
+    }
+}
+@media screen and (max-width:1052px){
+    .header-conteiner-menu-login{
+        display:none
+    }
+
+}
+@media screen and (max-width:1520px){
+    .header-container-menu-inscricao{
+        color:black;
+        background-color:yellow;
+        width:80%;
+        border-radius:5px;
+        padding: 5px;
+        font-size: 12pt;
+    }
+}
+@media (max-width: 360px) {
+    header{
+      font-size: 0.75rem;
+    }
+    .header-conteiner-box{
+        width:80%;
+        display: flex;
+        padding:10px;
+        align-items:end;
+    }
+
+} 
+@media (max-width: 552px) {
+   .header-container-login{
+        display:block
+    }
+    .header-container-box{
+        align-items:end
+        
+    }
+
+}
+@media screen and (max-width:405px){
+    .header-conteiner-logo{
+        width:100%;
+    }
+    .header-container-div1{
+        display: none
+    }
+}
+
